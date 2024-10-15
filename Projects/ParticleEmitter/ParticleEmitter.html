@@ -3,23 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Particle Emitter</title>
+    <link rel="stylesheet" href="../../CSS/style.css" />
 </head>
 <body>
     <!-- Header Section -->
     <section class="Header">
         <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-1">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
                 <span class="fs-4">Ryon's Portfolio</span>
             </a>
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="../index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="../../index.html" class="nav-link active" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">About</a></li>
             </ul>
             </header>
         </div>
+    </section>
+
+    <section>
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-0">
+              <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Particle Emitter</h1>
+              <p> OpenGL, C++</p>
+              <p class="lead">This is a final Project for my Advanced Graphics course. Inspired by a Particle tutorial, 
+                I implemented a particle system, utilizing C++ and OpenGL, that continuously renders quads from a particle emitter. 
+                The program's implementation is modular so new features can be added. Users can interact in real-time to increase/decrease particle spread and gravity.
+                <br/> <br/>
+                I optimized the program by implementing instancing which sends a single draw call to the GPU resulting in a reduction of draw calls by 99.99%. 
+                Further, I implemented frustum culling utilizing the Gribb-Hartmann method which results in a reduction in particles rendered by 30%.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">
+                    <a href="https://github.com/RyonCS/ParticleSystem" style="color: white; text-decoration: none;" target="_blank">
+                        View on Github
+                    </a> 
+                </button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                    <a href="https://www.youtube.com/watch?v=ZafiFYBXvXM&t=6s" style="text-decoration: none;" target="_blank">
+                        View Project Presentation on Youtube
+                    </a>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg p-0 overflow-hidden shadow-lg">
+                <video width="640" height="360" autoplay loop muted class="portfolio-page-img">
+                        <source src="../ParticleEmitter/Images/Particle_System_Cover_Gif.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+          </div>
     </section>
 
     <!-- Bootstrap Functionality -->
